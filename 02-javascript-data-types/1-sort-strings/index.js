@@ -6,7 +6,7 @@
  */
 export function sortStrings(arr, param = "asc") {
   const newArr = [...arr];
-  let dir = param == "desc" ? -1 : 1;
+  const dir = param == "desc" ? -1 : 1;
 
   newArr.sort(
     (a, b) =>
