@@ -4,6 +4,5 @@
  * @returns {*[]} - the new array with uniq values
  */
 export function uniq(arr) {
-  let newArr = new Set(arr);
-  return Array.from(newArr);
+  return [...new Set(arr)];
 }
