@@ -1,6 +1,6 @@
 export default class NotificationMessage {
   static isActive;
-  body = document.querySelector("body");
+  body = document.body;
 
   constructor(str = "", { duration = 0, type = "" } = {}) {
     this.str = str;

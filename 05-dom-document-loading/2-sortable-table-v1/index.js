@@ -77,7 +77,7 @@ export default class SortableTable {
       column.order = "";
       if (column.id === fieldValue) {
         column.order = orderValue;
-        debugger
+        
         this.sortData(direction, fieldValue)
       }
     })
