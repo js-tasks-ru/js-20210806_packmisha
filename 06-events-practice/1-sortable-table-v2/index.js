@@ -13,10 +13,6 @@ export default class SortableTable {
       }
 
       column.append(this.subElements.arrow)
-      //Работает, но почему работает, понять не могу))
-      //Подскажите, почему когда я вставляю стрелку при помощи append,
-      //не происходит так, что вставляется больше одной стрелки
-      //И что убирает стрелку из колонки, когда я нажимаю на другую колонку?
 
       this.subElements.body.innerHTML = this.getBody(sortedData)
     }
@@ -136,7 +132,7 @@ export default class SortableTable {
   }
 
   getSubElements(element) {
-    let result = {};
+    const result = {};
     const elements = element.querySelectorAll("[data-element]")
     elements.forEach(subElement => {
       const name = subElement.dataset.element;
