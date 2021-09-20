@@ -44,8 +44,8 @@ export default class ProductForm {
     document.body.append(tempFileUpload);
     tempFileUpload.click();
 
-    tempFileUpload.onchange = e => {
-      e.preventDefault();
+    tempFileUpload.onchange = event => {
+      event.preventDefault();
       const [file] = tempFileUpload.files;
       if (file) {
         const data = new FormData();
